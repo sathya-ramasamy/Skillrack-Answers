@@ -1,0 +1,42 @@
+/* check the given number n is power of x.
+example:
+input:
+8
+2
+output:
+yes*/
+
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int n,m;
+int r,flag=0;
+int t;
+scanf("%d %d",&n,&m);
+
+t=m;
+  while(t>0&&n>=0)
+
+ {
+     r=n%m;
+     n=n/m;
+    
+     t--;
+     if(r!=0)
+     {
+         flag=1;
+         break;
+     }
+
+ }
+ if(flag==0)
+ printf("yes");
+ else
+ printf("no");
+
+ return 0;
+}
