@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int m,n,l,i;
+char s[100];
+scanf("%s %d %d",s,&m,&n);
+l=strlen(s);
+for(i=m;i<=l-n-1;i++)
+{
+    printf("%c",s[i]);
+}
+
+}
