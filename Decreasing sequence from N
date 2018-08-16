@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int n,i,m;
+scanf("%d %d\n",&n,&m);
+for(i=n-m;i>=1;i-=m)
+{
+    printf("%d ",i);
+}
+
+}
