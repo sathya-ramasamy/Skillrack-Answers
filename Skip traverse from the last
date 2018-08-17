@@ -1,0 +1,59 @@
+/*if the number if even skip one number,if it is odd skip two numbers. traverse from last*/
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int limit,arr[1000],i;
+scanf("%d",&limit);
+for(i=0;i<limit;i++)
+
+{
+    scanf("%d ",&arr[i]);
+}
+for(i=limit-1;i>=0;)
+{
+    if(arr[i]%2!=0)
+    {
+        printf("%d ",arr[i]);
+        i=i-3;
+    }
+    else
+    {
+        printf("%d ",arr[i]);
+        i=i-2;
+        
+    }
+    
+}
+}
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int limit,arr[1000],i;
+scanf("%d",&limit);
+for(i=0;i<limit;i++)
+
+{
+    scanf("%d ",&arr[i]);
+}
+for(i=limit-1;i>=0;)
+{
+    if(arr[i]%2!=0)
+    {
+        printf("%d ",arr[i]);
+        i=i-3;
+    }
+    else
+    {
+        printf("%d ",arr[i]);
+        i=i-2;
+        
+    }
+    
+}
+}
