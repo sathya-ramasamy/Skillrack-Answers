@@ -1,0 +1,31 @@
+/*
+input:
+aaabbbccc
+output
+a3b3c3
+*/
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int i,count=1,len;
+char str[1000];
+scanf("%s",str);
+len=strlen(str);
+for(i=0;i<len;i++)
+{
+    if(str[i]==str[i+1])
+    count++;
+    else
+    {
+  
+    printf("%c%d",str[i],count);
+  
+    count=1;
+    
+    }
+    
+}
+}
