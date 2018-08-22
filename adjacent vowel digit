@@ -1,0 +1,25 @@
+/*
+input:
+diagram
+output:
+diagrm
+*/
+
+
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int i;
+char str[1000];
+scanf("%s",str);
+for(i=0;i<strlen(str);i++)
+{
+    //str[i]=toupper(str[i]);
+    if(str[i-1]=='A'||str[i-1]=='E'||str[i-1]=='I'||str[i-1]=='O'||str[i-1]=='U'||str[i+1]=='A'||str[i+1]=='E'||str[i+1]=='I'||str[i+1]=='O'||str[i+1]=='U'||
+    str[i-1]=='a'||str[i-1]=='e'||str[i-1]=='i'||str[i-1]=='o'||str[i-1]=='u'||str[i+1]=='a'||str[i+1]=='e'||str[i+1]=='i'||str[i+1]=='o'||str[i+1]=='u')
+    printf("%c",str[i]);
+}
+}
