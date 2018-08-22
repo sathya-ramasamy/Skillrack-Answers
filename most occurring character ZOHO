@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+char str[100];
+int a[26]={0};
+int i,j,k=0,l;
+char m;
+scanf("%s",str);
+for(i=0;i<strlen(str);i++)
+{
+    a[str[i]-'a']++;
+    if(a[str[i]-'a']>k)
+    {
+    k=a[str[i]-'a'];
+    m=str[i];
+    }
+}
+printf("%c",m);
+}
