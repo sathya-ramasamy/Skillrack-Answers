@@ -1,0 +1,34 @@
+/*
+input:
+abc
+output:
+zyx
+*/
+
+
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+char str[1000],val;
+char x[26]="zyxwvutsrqponmlkjihgfedcba";
+int i,c;
+scanf("%s",str);
+for(i=0;i<strlen(str);i++)
+{
+    if(isupper(str[i]))
+    {
+        c=str[i]-'A';
+        printf("%c",(char)toupper(x[c]));
+     
+    }
+    else
+    {
+        c=str[i]-'a';
+        printf("%c",x[c]);
+    }
+}
+}
