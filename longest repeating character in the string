@@ -9,13 +9,6 @@ scanf("%s %c",str,&ch);
 l=strlen(str);
 for(i=0;i<=strlen(str);i++)
 {
-    
- /*   if(str[i]==l-1&&str[i]==ch)
-    {
-        count++;
-    if(count>max)
-    max=count;
-    }*/
     if(str[i]==ch)
     {
         count++;
