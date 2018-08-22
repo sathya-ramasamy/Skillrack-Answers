@@ -1,0 +1,27 @@
+/*
+input :
+hello
+7
+output:
+hellohe
+*/
+
+
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+int len,index,n=0,limit;
+char str[100];
+scanf("%s\n%d",str,&limit);
+len=strlen(str);
+for(index=0;index<len&&n<limit;index++)
+{
+
+printf("%c",str[index]);
+if(index==len-1)
+index=-1;
+n++;
+}
+}
