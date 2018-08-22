@@ -1,0 +1,30 @@
+/*
+input
+5430
+output
+4329
+*/
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int n;
+int i=0,k,s=0,r;
+int a[100];
+scanf("%d",&n);
+while(n>0)
+{
+    r=n%10;
+   a[i]=r;
+    n=n/10;
+    i++;
+}
+for(k=i-1;k>=0;k--)
+{
+ if(a[k]==0)
+ a[k]=10;
+ printf("%d",a[k]-1);
+}
+}
