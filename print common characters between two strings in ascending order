@@ -1,0 +1,69 @@
+/*input:
+hello velocity
+output:
+e l o
+input:
+apple pepper
+output:
+e p
+*/
+
+
+
+
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+char s[100],s1[100];
+int l1,l,i,j,temp=0,m=0,ans[100],n;
+int k,c=0;
+scanf("%s %s",s,s1);
+l=strlen(s);
+l1=strlen(s1);
+
+for(i=0;i<l;i++)
+{
+    for(j=i+1;j<l;j++)
+    {
+        if(s[i]==s[j])
+        {
+            s[j]='$';
+        }
+    }
+   for(k=0;k<l1;k++)
+   {
+       if(s[i]==s1[k])
+       
+   {
+       c++;
+      
+   }
+   }   if(c!=0)
+   {
+   ans[m]=s[i];
+   m++;
+   }
+   c=0;
+}
+n=m;
+for(i=0;i<n;i++)
+{
+    for(j=i+1;j<n;j++)
+    {
+        if(ans[i]>ans[j])
+        {
+        temp=ans[i];
+        ans[i]=ans[j];
+        ans[j]=temp;
+        }
+    }
+}
+for(i=0;i<n;i++)
+{
+    printf("%c ",ans[i]);
+}
+return 0;
+}
